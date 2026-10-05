@@ -1,0 +1,42 @@
+# Environment and secrets
+.env
+.env.*
+!.env.example
+application-secrets.yml
+application-secrets.yaml
+**/application-secrets.yml
+**/application-secrets.yaml
+*.keystore
+*.jks
+local.properties
+
+# Java / Maven
+target/
+*.class
+*.log
+.mvn/timing.properties
+
+# Gradle / Android / Kotlin
+.gradle/
+build/
+**/build/
+captures/
+.externalNativeBuild/
+.cxx/
+
+# IDEs
+.idea/
+*.iml
+.vscode/
+.classpath
+.project
+.settings/
+
+# OS / local files
+.DS_Store
+Thumbs.db
+*.swp
+*.tmp
+
+# Runtime
+logs/
