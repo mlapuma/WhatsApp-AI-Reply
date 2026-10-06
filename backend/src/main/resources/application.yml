@@ -24,3 +24,5 @@ management:
   endpoint:
     health:
       show-details: never
+
+security:\n  jwt:\n    secret: ${JWT_SECRET:change_me_change_me_change_me_change_me}\n    expiration-minutes: ${JWT_EXPIRATION_MINUTES:60}\n
