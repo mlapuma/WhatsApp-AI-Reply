@@ -1,6 +1,17 @@
 spring:
   application:
     name: whatsapp-ai-reply-backend
+  datasource:
+    url: jdbc:postgresql://${DB_HOST:localhost}:${DB_PORT:5432}/${DB_NAME:whatsapp_ai_reply}
+    username: ${DB_USERNAME:whatsapp}
+    password: ${DB_PASSWORD:change_me}
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    open-in-view: false
+  flyway:
+    enabled: true
+    locations: classpath:db/migration
 
 server:
   port: ${SERVER_PORT:8080}
